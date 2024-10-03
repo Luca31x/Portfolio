@@ -1,20 +1,107 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto nella mia pagina!</title>
-    
+    <title>Luca Ronca - Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <div class="logo"><a href="#hero">&gt;LR</a></div>
+        </div>
 
-<header>
-    <h1>Benvenuto nella mia pagina!</h1>
-</header>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#competenze">Competenze</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
 
-<footer>
-    <p>&copy;2024 Tutti i diritti riservati.</p>
-</footer>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <span class="hero-arrow">&gt;</span>
+                <div class="hero-line"></div>
+            </div>
+            <div class="hero-text">
+                <h1>Luca Ronca</h1>
+                <p><span class="role">Developer</span> : Software, Game</p>
+                <div class="hero-icons">
+                    <a href="mailto:luca.ronca.lr@gmail.com"><img src="Assets/MailIcon.png" alt="Email"></a>
+                    <a href="https://www.linkedin.com/in/lucaronca"><img src="Assets/LinkedinIcon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="Assets/GitlabIcon.png" alt="GitLab"></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Bio Section -->
+    <section id="bio" class="bio">
+        <div class="bio-container">
+            <div class="bio-decoration">
+                <span class="bio-arrow">&gt;</span>
+                <div class="bio-line"></div>
+            </div>
+            <div class="bio-content">
+                <p id="section-title">Bio</p>
+                <p id="paragraph">
+                    Sono un Developer emergente, specializzato nella realtà virtuale e aumentata.
+                </p>
+                <p id="paragraph">
+                    Il mio obiettivo è crescere professionalmente, ampliando le mie competenze attraverso progetti 
+                    stimolanti che mi consentano di applicare e approfondire le mie conoscenze nello sviluppo di applicazioni.
+                </p>
+
+                <div class="bio-cards">
+                    <div class="card">
+                        <img src="Assets/ProblemSolvingIcon.png" alt="ProblemSolving">
+                        <p>Analisi e Problem Solving</p>
+                    </div>
+                    <div class="card">
+                        <img src="Assets/AdaptabilityIcon.png" alt="Adaptability">
+                        <p>Adattabilità e Flessibilità</p>
+                    </div>
+                    <div class="card">
+                        <img src="Assets/PuntualityIcon.png" alt="Puntuality">
+                        <p>Affidabilità e Puntualità</p>
+                    </div>
+                    <div class="card">
+                        <img src="Assets/TeamworkIcon.png" alt="Teamwork">
+                        <p>Lavoro di squadra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Competenze Section -->
+    <section id="competenze" class="section">
+        <h2>Competenze</h2>
+        <p>Questa è la sezione competenze.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>Progetti</h2>
+        <p>Questa è la sezione portfolio.</p>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="section">
+        <h2>Contatti</h2>
+        <p>Questa è la sezione contatti.</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

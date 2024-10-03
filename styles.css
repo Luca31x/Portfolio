@@ -1,0 +1,242 @@
+body {
+    font-family: 'Cascadia Code', monospace; /* Applica Cascadia Code a tutto il sito */
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spazia il logo e il menu */
+    align-items: center; /* Allinea verticalmente */
+    position: fixed;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo a {
+    margin-left: 20px; /* Margine a sinistra per il logo */
+    color: #2869c0; /* Colore del testo del logo */
+    font-size: 24px; /* Dimensione del testo */
+    font-weight: bolder; /* Grassetto */
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.logo a:hover {
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex; /* Utilizza flexbox per il menu */
+    margin-right: 20px; /* Margine a destra per il menu */
+}
+
+.navbar ul li {
+    margin-left: 20px; /* Spaziatura tra i link */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    background-color: #2c2c2c;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    position: relative; /* Per permettere il posizionamento assoluto della freccia */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente la freccia e il testo */
+}
+
+.hero-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px; /* Riduce lo spazio tra la decorazione e il testo */
+}
+
+.hero-arrow {
+    font-size: 108px;
+    color: #2869c0; /* Colore della freccia */
+    transform: rotate(90deg); /* Ruota la freccia verso il basso */
+}
+
+.hero-line {
+    width: 6px;
+    height: 160px;
+    background-color: #2869c0; /* Colore della linea verticale */
+    margin-top: -25px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-text h1 {
+    color: #2869c0; 
+    font-size: 108px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.hero-text p {
+    color: #585858;
+    font-size: 40px;
+    margin-left: 70px;
+}
+
+.role {
+    color: #4ba546; 
+    font-weight: bold;
+}
+
+.hero-icons {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.hero-icons a {
+    margin-right: 80px; /* Aggiungi 15px di spazio tra le icone */
+}
+
+.hero-icons a:last-child {
+    margin-right: 0; /* Rimuove il margine sull'ultima icona */
+}
+
+.hero-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Bio Section */
+.bio {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bio-container {
+    display: flex; /* Disposizione orizzontale per il contenuto */
+}
+
+.bio-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la decorazione */
+    margin-right: 20px; /* Spazio tra la decorazione e il contenuto */
+}
+
+.bio-arrow {
+    color: #2869c0; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 40px; 
+    transform: rotate(90deg);
+}
+
+.bio-line {
+    width: 2px;
+    height: 100%; /* Altezza della linea verticale, puoi regolarla */
+    background-color: #2869c0; /* Colore della linea verticale */
+    margin-top: 10px; /* Margine sopra la linea */
+}
+
+.bio-content {
+    flex: 1; /* Permette al contenuto di occupare spazio */
+}
+
+#section-title {
+    color: #2869c0;
+    font-weight: bolder;
+    font-size: 36px; 
+    margin: 0;
+    margin-bottom: 10px; 
+}
+
+#paragraph {
+    font-weight: lighter;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.bio-cards {
+    margin-top: 40px;
+    display: flex; 
+    gap: 60px; 
+    align-items: center;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card img{
+    height: 115px;
+    width: 115px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    color: #1e1e1e;
+}
+
+/* Robe */
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+#competenze {
+    background-color: #bbb;
+}
+
+#portfolio {
+    background-color: #999;
+}
+
+#contatti {
+    background-color: #777;
+}
+
+html {
+    scroll-behavior: smooth;
+}
