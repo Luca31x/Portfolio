@@ -19,9 +19,9 @@
 
         <ul>
             <li><a href="#bio">Bio</a></li>
-            <li><a href="#competenze">Competenze</a></li>
+            <li><a href="#skills">Competenze</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contatti">Contatti</a></li>
+            <li><a href="#contacts">Contatti</a></li>
         </ul>
     </nav>
 
@@ -38,7 +38,7 @@
                 <div class="hero-icons">
                     <a href="mailto:luca.ronca.lr@gmail.com"><img src="Assets/MailIcon.png" alt="Email"></a>
                     <a href="https://www.linkedin.com/in/lucaronca"><img src="Assets/LinkedinIcon.png" alt="LinkedIn"></a>
-                    <a href="#"><img src="Assets/GitlabIcon.png" alt="GitLab"></a>
+                    <!--<a href="#"><img src="Assets/GitlabIcon.png" alt="GitLab"></a>-->
                 </div>
             </div>
         </div>
@@ -109,17 +109,70 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
-        <h2>Progetti</h2>
-        <p>Questa è la sezione portfolio.</p>
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-decoration">
+                <span class="margin-arrow">&gt;</span>
+                <div class="margin-line"></div>
+            </div>
+            <div class="portfolio-content">
+                <p id="section-title">Portfolio</p>
+                <p id="paragraph">
+                    Prossimamente.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- Contatti Section -->
-    <section id="contatti" class="section">
-        <h2>Contatti</h2>
-        <p>Questa è la sezione contatti.</p>
+    <!-- Contact Section -->
+    <section id="contacts" class="contacts">
+        <div class="contacts-container">
+            <div class="contacts-decoration">
+                <span class="margin-arrow">&gt;</span>
+                <div class="margin-line"></div>
+            </div>
+
+            <div class="contacts-content">
+                <p id="section-title">Contatti</p>
+
+                <div class="contact-info">
+                    <p id="paragraph">Per domande o richieste puoi contattarmi utilizzando il form oppure tramite:</p>
+                    <br>
+                    <p id="paragraph">Email: <a href="mailto:luca.ronca.lr@gmail.com">luca.ronca.lr@gmial.com</a></p>
+                    <p id="paragraph">Linkedin:</lINk><a href="https://www.linkedin.com/in/lucaronca">Luca Ronca</a></p>
+                    <!--<p id="paragraph">Telefono: <a href="tel:+39123456789">+39 123 456 789</a></p>-->
+                    <br>
+                    <p id="paragraph">Posizione: Torino, IT</p>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Oggetto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Messaggio</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
     </section>
 
+    <footer>
+        <p>&copy; 2024 - Luca Ronca.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

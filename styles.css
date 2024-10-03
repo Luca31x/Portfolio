@@ -217,6 +217,7 @@
 
 .skills-img{
     margin: -100px;
+    margin-right: -80px;
     object-fit: cover;
 }
 
@@ -226,13 +227,154 @@
     object-fit: cover;
 }
 
-/* Robe */
-#portfolio {
-    background-color: #999;
+/* Portfolio Section */
+.portfolio {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#contatti {
-    background-color: #777;
+.portfolio-container {
+    display: flex; /* Disposizione orizzontale per il contenuto */
+}
+
+.portfolio-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la decorazione */
+    margin-right: 20px; /* Spazio tra la decorazione e il contenuto */
+}
+
+.portfolio-content {
+    flex: 1; /* Permette al contenuto di occupare spazio */
+}
+
+/* Contact */
+.contacts {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.contacts-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contacts-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Spazio tra decorazione e contenuto */
+}
+
+.contacts-content {
+    flex: 1;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 0 0 10px;
+}
+
+.contact-info a {
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form di contatto */
+.contacts {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.contacts-container {
+    display: flex; 
+}
+
+.contacts-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-right: 20px; 
+}
+
+.contacts-content {
+    flex: 1;
+}
+
+.contacts-content p{
+    max-width: 50%; 
+    margin: 0 auto; 
+}
+
+.form-container{
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    width: 710px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2869c0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2A628F;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e; /* Colore di sfondo */
+    color: #ffffff; /* Colore del testo */
+    text-align: center; /* Centra il contenuto */
+    padding: 20px; /* Spazio interno */
+    position: relative;
+    bottom: 0; /* Assicura che il footer sia in fondo alla pagina */
+    width: 100%; /* Il footer copre l'intera larghezza della pagina */
 }
 
 /* Common */
